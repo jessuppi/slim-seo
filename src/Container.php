@@ -31,8 +31,9 @@ class Container {
 		$services['settings']          = new Settings\Settings( $services['meta_tags_manager'] );
 		$services['code']              = new Code( $services['settings'] );
 
-		$services['redirection'] = new Redirection\Loader;
-		$services['breadcrumbs'] = new Breadcrumbs;
+		$services['redirection']  = new Redirection\Loader;
+		$services['breadcrumbs']  = new Breadcrumbs;
+		$services['category_url'] = new CategoryUrl;
 
 		// Admin only.
 		if ( is_admin() ) {

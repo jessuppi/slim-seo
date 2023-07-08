@@ -16,6 +16,7 @@ $features = [
 	'feed'             => [ __( 'RSS feed', 'slim-seo' ), __( 'Automatically add a back link to posts to prevent content from being copied', 'slim-seo' ) ],
 	'schema'           => [ __( 'Schema', 'slim-seo' ), __( 'Automatically generate unified schema graph to help search engines understand the website structure', 'slim-seo' ) ],
 	'redirection'      => [ __( 'Redirection', 'slim-seo' ), __( 'Redirect broken pages, unimportant pages, or old URLs to existing working URLs', 'slim-seo' ) ],
+	'category_url'     => [ __( 'Remove category base', 'slim-seo' ), __( 'Remove "/category/" base from the category URL.', 'slim-seo' ) ],
 ];
 
 echo '<p>', esc_html__( 'Toggle the features you want to use on your website.', 'slim-seo' ), '</p>';
